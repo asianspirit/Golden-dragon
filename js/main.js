@@ -161,11 +161,6 @@ $(function () {
 
 
   //wow.js
-  var wow = new WOW(
-    {
-      mobile: false
-    }
-  );
-  WOW().init();
+  new WOW().init();
 
 });
