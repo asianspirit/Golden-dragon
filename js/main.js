@@ -114,7 +114,7 @@ $(function () {
 
   // var scrollbegin = $(".header").height();
   // $('.header').height()
-  var headerHeight = $('.header').height() - 300;
+  var headerHeight = $('.header').height();
   $(window).scroll(function () {
     if ($(this).scrollTop() >= headerHeight) {
       $(".header__top-wrapper").addClass("background");
@@ -161,11 +161,11 @@ $(function () {
 
 
   //wow.js
-  new WOW().init();
-
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000, 
-    speedAsDuration: true
-});
+  var wow = new WOW(
+    {
+      mobile: false
+    }
+  );
+  WOW().init();
 
 });
